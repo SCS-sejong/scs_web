@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  height: 700%; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  height: 100%;
+  display: table;
+  clear: both;
+}
+
+.closet {
+	width: 60%;
+}
+
+.category {
+	height: 10%;
+}
+.coments {
+	height: 70%;
+}
+
+</style>
+</head>
+<body>
+	<div class="row category">
+		<div class="row" style = "background:#8ef773">row1</div>
+		<div>
+			<div class="column" style="background:#eef773">c1</div>
+			<div class="column closet" style="background:#ffd769">c2</div>
+			<div class="column" style="background:#ffb53d">c3</div>
+		</div>
+		<div class="row " style = "background:rgb(115, 176, 247)">row3</div>
+	  </div>
+</body>
+</html>
